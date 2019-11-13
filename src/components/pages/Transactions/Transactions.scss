@@ -1,0 +1,27 @@
+@import "../../../globals";
+
+.transactions{
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+  table-layout: fixed;
+  &__title{
+    display: table-caption;
+    text-align: center;
+  }
+  &__header{
+    display: table-header-group;
+  }
+  &__body{
+    display: table-row-group;
+  }
+  &__row{
+    display: table-row;
+  }
+  &__cell{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid $dark-10;
+  }
+}

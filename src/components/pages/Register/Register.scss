@@ -1,0 +1,31 @@
+@import "../../../globals";
+
+.register{
+  max-width: 40rem;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    margin-top: 10rem;
+  }
+  &__title{
+    text-align: center;
+  }
+  &__field{
+    padding-bottom: 2rem;
+  }
+  &__error{
+    height: 1.4rem;
+    color: red;
+    text-align: center;
+
+  }
+  &__button{
+    text-align: center;
+  }
+  &__login-info{
+    text-align: center;
+    margin-top: 1rem;
+  }
+  &__login-link{
+    color: $light-red;
+  }
+}

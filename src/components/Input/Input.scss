@@ -1,0 +1,66 @@
+@import "../../globals";
+
+.input{
+  position: relative;
+  &__field{
+    box-sizing: border-box;
+    border: 1px solid $dark-10;
+    border-left: none;
+    border-right: none;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 2rem 0 2rem 1rem;
+    min-width: 0; //hack for firefox
+
+    &:focus{
+      outline: none;
+      border-bottom: 1px solid $dark;
+    }
+    &_centered{
+      text-align: center;
+      padding-left: 0;
+    }
+  }
+
+}
+
+.react-autosuggest{
+  &__input{
+    box-sizing: border-box;
+    border: 1px solid $dark-10;
+    border-left: none;
+    border-right: none;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 2rem 0 2rem 1rem;
+    min-width: 0; //hack for firefox
+    text-align: center;
+    padding-left: 0;
+    &:focus{
+      outline: none;
+      border-bottom: 1px solid $dark;
+    }
+  }
+  &__suggestions-container{
+    position: absolute;
+    background-color: white;
+    min-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+    &--open{
+      border: 1px solid $dark-50;
+      border-top: 0;
+    }
+  }
+  &__suggestions-list{
+    list-style: none;
+    padding: 0;
+  }
+  &__suggestion{
+    cursor: pointer;
+    &:hover{
+      background-color: $dark-10;
+    }
+  }
+}
